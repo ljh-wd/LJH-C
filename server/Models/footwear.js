@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const JumperSchema = new Schema({
+const FootwearSchema = new Schema({
   name: { type: String },
   amount: { type: Number },
-  sizes: [{ type: String }],
+  sizes: [{ type: Number }],
   imgUrl: { type: String },
   colour: [{ type: String }],
   gender: { type: String },
 });
 
-module.exports = mongoose.model("Jumpers", JumperSchema);
+module.exports = mongoose.model("Footwear", FootwearSchema);
