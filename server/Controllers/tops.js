@@ -1,14 +1,14 @@
 const Tops = require("../Models/tops");
 
 const getAllTops = async (req, res) => {
-  const { name, amount, size, colour, gender, numericFilters, sort } =
+  const { name, amount, sizes, colour, gender, numericFilters, sort } =
     req.query;
 
   const queryObject = {};
 
   if (name) queryObject.name = { $regex: name, $options: "i" };
   if (amount) queryObject.amount = amount;
-  if (size) queryObject.size = size;
+  if (sizes) queryObject.sizes = sizes;
   if (colour) queryObject.colour = colour;
   if (gender) queryObject.gender = gender;
 
