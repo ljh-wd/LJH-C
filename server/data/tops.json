@@ -1,40 +1,36 @@
-{
-  "name": "Tops",
-  "categories": [
-    {
-      "name": "Plain T-Shirt",
-      "amount": 3.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://images.pexels.com/photos/6668809/pexels-photo-6668809.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "colour": "White",
-      "gender": "male"
-    },
+[
+  {
+    "name": "Plain T-Shirt",
+    "amount": 3.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://images.pexels.com/photos/6668809/pexels-photo-6668809.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "colour": "White",
+    "gender": "male"
+  },
+  {
+    "name": "Patterned Shirt",
+    "amount": 12.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://images.pexels.com/photos/769733/pexels-photo-769733.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "colour": ["White", "Red"],
+    "gender": "male"
+  },
 
-    {
-      "name": "Patterned Shirt",
-      "amount": 12.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://images.pexels.com/photos/769733/pexels-photo-769733.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "colour": ["White", "Red"],
-      "gender": "male"
-    },
+  {
+    "name": "Tank Top",
+    "amount": 14.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://images.pexels.com/photos/4725152/pexels-photo-4725152.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "colour": "White",
+    "gender": "female"
+  },
 
-    {
-      "name": "Tank Top",
-      "amount": 14.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://images.pexels.com/photos/4725152/pexels-photo-4725152.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "colour": "White",
-      "gender": "female"
-    },
-
-    {
-      "name": "Pink T-shirt",
-      "amount": 7.0,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://images.pexels.com/photos/6427233/pexels-photo-6427233.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "colour": "Pink",
-      "gender": "female"
-    }
-  ]
-}
+  {
+    "name": "Pink T-shirt",
+    "amount": 7.0,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://images.pexels.com/photos/6427233/pexels-photo-6427233.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "colour": "Pink",
+    "gender": "female"
+  }
+]

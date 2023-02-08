@@ -1,40 +1,37 @@
-{
-  "name": "Jumpers",
-  "categories": [
-    {
-      "name": "Plain jumper",
-      "amount": 9.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/1409297615/photo/portrait-of-young-man-in-a-yellow-sweater-outdoors.jpg?s=612x612&w=0&k=20&c=r0vISeO_hsM2YdCB9oFGEMZLlnV5wnxpLRdXXI0ypw8=",
-      "colour": "Yellow",
-      "gender": "male"
-    },
+[
+  {
+    "name": "Plain jumper",
+    "amount": 9.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/1409297615/photo/portrait-of-young-man-in-a-yellow-sweater-outdoors.jpg?s=612x612&w=0&k=20&c=r0vISeO_hsM2YdCB9oFGEMZLlnV5wnxpLRdXXI0ypw8=",
+    "colour": "Yellow",
+    "gender": "male"
+  },
 
-    {
-      "name": "Plain light fitted jumper",
-      "amount": 7.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/638278226/photo/young-asian-man.jpg?s=612x612&w=0&k=20&c=OsW2N6l-MPg901x2pHs5lN3MuFP0II2-X7GIJv8Tt-4=",
-      "colour": "Blue",
-      "gender": "male"
-    },
+  {
+    "name": "Plain light fitted jumper",
+    "amount": 7.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/638278226/photo/young-asian-man.jpg?s=612x612&w=0&k=20&c=OsW2N6l-MPg901x2pHs5lN3MuFP0II2-X7GIJv8Tt-4=",
+    "colour": "Blue",
+    "gender": "male"
+  },
 
-    {
-      "name": "Plain turtle neck jumper",
-      "amount": 14.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/1462962026/photo/beauty-portrait-of-young-asian-woman-in-red-knit.jpg?s=612x612&w=0&k=20&c=zr1i6XYgahcTHEqUEsBcergQvj_pZbzdnAD7DnmYG7U=",
-      "colour": "Red",
-      "gender": "female"
-    },
+  {
+    "name": "Plain turtle neck jumper",
+    "amount": 14.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/1462962026/photo/beauty-portrait-of-young-asian-woman-in-red-knit.jpg?s=612x612&w=0&k=20&c=zr1i6XYgahcTHEqUEsBcergQvj_pZbzdnAD7DnmYG7U=",
+    "colour": "Red",
+    "gender": "female"
+  },
 
-    {
-      "name": "Blue turtle neck Jumper",
-      "amount": 9.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/184344932/photo/female-portrait.jpg?s=612x612&w=0&k=20&c=Z07p9ihfytYOyq60VUhzNi6sTL3Z1cj5lliVrttQldc=",
-      "colour": "Blue",
-      "gender": "female"
-    }
-  ]
-}
+  {
+    "name": "Blue turtle neck Jumper",
+    "amount": 9.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/184344932/photo/female-portrait.jpg?s=612x612&w=0&k=20&c=Z07p9ihfytYOyq60VUhzNi6sTL3Z1cj5lliVrttQldc=",
+    "colour": "Blue",
+    "gender": "female"
+  }
+]

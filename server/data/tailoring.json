@@ -1,40 +1,37 @@
-{
-  "name": "Tailoring",
-  "categories": [
-    {
-      "name": "Olive plain tailored suit",
-      "amount": 84.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/1425640652/photo/fashion-model-portrait-sexy-young-man-with-hands-in-pocket-and-studio-on-grey-background.jpg?s=612x612&w=0&k=20&c=gnPBRlkQ2VWA87k8QkH374AtySJnGFIzEJXIvygjMnU=",
-      "colour": "Olive",
-      "gender": "male"
-    },
+[
+  {
+    "name": "Olive plain tailored suit",
+    "amount": 84.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/1425640652/photo/fashion-model-portrait-sexy-young-man-with-hands-in-pocket-and-studio-on-grey-background.jpg?s=612x612&w=0&k=20&c=gnPBRlkQ2VWA87k8QkH374AtySJnGFIzEJXIvygjMnU=",
+    "colour": "Olive",
+    "gender": "male"
+  },
 
-    {
-      "name": "Navy plain tailored suit",
-      "amount": 49.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/1346562873/photo/successful-man-entrepreneur-businessman-investor-creative-producer-concept.jpg?s=612x612&w=0&k=20&c=vKp0lAsPuwWIXLd604ELa30AfgiIstwySohIIu1RdpU=",
-      "colour": "Navy",
-      "gender": "male"
-    },
+  {
+    "name": "Navy plain tailored suit",
+    "amount": 49.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/1346562873/photo/successful-man-entrepreneur-businessman-investor-creative-producer-concept.jpg?s=612x612&w=0&k=20&c=vKp0lAsPuwWIXLd604ELa30AfgiIstwySohIIu1RdpU=",
+    "colour": "Navy",
+    "gender": "male"
+  },
 
-    {
-      "name": "Striped black suit",
-      "amount": 54.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/171577664/photo/female-business-professional-using-digital-tablet-isolated.jpg?s=612x612&w=0&k=20&c=bJeMDDwskQh2FE4DT_mzPz1N3OfNT1YIj2WdeNG4zEo=",
-      "colour": "Black",
-      "gender": "female"
-    },
+  {
+    "name": "Striped black suit",
+    "amount": 54.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/171577664/photo/female-business-professional-using-digital-tablet-isolated.jpg?s=612x612&w=0&k=20&c=bJeMDDwskQh2FE4DT_mzPz1N3OfNT1YIj2WdeNG4zEo=",
+    "colour": "Black",
+    "gender": "female"
+  },
 
-    {
-      "name": "Navy plain tailored suit",
-      "amount": 74.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/1262236359/photo/laughing-mature-adult-afro-american-businesswoman.jpg?s=612x612&w=0&k=20&c=mhR0ql8LwPN69aHICrrzcPcQXYBUfqCVi7U3Gqs2zXg=",
-      "colour": "Navy",
-      "gender": "female"
-    }
-  ]
-}
+  {
+    "name": "Navy plain tailored suit",
+    "amount": 74.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/1262236359/photo/laughing-mature-adult-afro-american-businesswoman.jpg?s=612x612&w=0&k=20&c=mhR0ql8LwPN69aHICrrzcPcQXYBUfqCVi7U3Gqs2zXg=",
+    "colour": "Navy",
+    "gender": "female"
+  }
+]

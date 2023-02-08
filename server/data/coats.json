@@ -1,40 +1,37 @@
-{
-  "name": "Coats",
-  "categories": [
-    {
-      "name": "Grey wooly overcoat",
-      "amount": 33.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/538025134/photo/handsome-elegant-man-in-overcoat-isolated.jpg?s=612x612&w=0&k=20&c=OIT2Htd1li6UJEL7HFNyhIi1upMglqj4qFEv6_WqjWc=",
-      "colour": "Grey",
-      "gender": "male"
-    },
+[
+  {
+    "name": "Grey wooly overcoat",
+    "amount": 33.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/538025134/photo/handsome-elegant-man-in-overcoat-isolated.jpg?s=612x612&w=0&k=20&c=OIT2Htd1li6UJEL7HFNyhIi1upMglqj4qFEv6_WqjWc=",
+    "colour": "Grey",
+    "gender": "male"
+  },
 
-    {
-      "name": "Black & Yellow isolated coat",
-      "amount": 47.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/111952792/photo/man-in-ski-parka-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=hkAunqgKF1v4AqoaOy73CDhfTTksfEkUpjI1G6tg2IE=",
-      "colour": ["Black", "Yellow"],
-      "gender": "male"
-    },
+  {
+    "name": "Black & Yellow isolated coat",
+    "amount": 47.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/111952792/photo/man-in-ski-parka-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=hkAunqgKF1v4AqoaOy73CDhfTTksfEkUpjI1G6tg2IE=",
+    "colour": ["Black", "Yellow"],
+    "gender": "male"
+  },
 
-    {
-      "name": "Red winter quilted coat",
-      "amount": 49.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/1445706779/photo/girl-in-a-winter-sports-jacket.jpg?s=612x612&w=0&k=20&c=zix518btGNjMSpmM2z3rhO6A7UdS1QNYbu1rdryElw4=",
-      "colour": "Red",
-      "gender": "female"
-    },
+  {
+    "name": "Red winter quilted coat",
+    "amount": 49.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/1445706779/photo/girl-in-a-winter-sports-jacket.jpg?s=612x612&w=0&k=20&c=zix518btGNjMSpmM2z3rhO6A7UdS1QNYbu1rdryElw4=",
+    "colour": "Red",
+    "gender": "female"
+  },
 
-    {
-      "name": "Light washed denim jacket",
-      "amount": 14.99,
-      "sizes": ["XS", "S", "M", "L", "XL"],
-      "imgUrl": "https://media.istockphoto.com/id/1455902697/photo/beautiful-young-woman-posing-in-city-park.jpg?s=612x612&w=0&k=20&c=gdgQgrV3xEM3YDGyOcp_MSN37_QnkfyeoYYExz4uEUU=",
-      "colour": "Blue",
-      "gender": "female"
-    }
-  ]
-}
+  {
+    "name": "Light washed denim jacket",
+    "amount": 14.99,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "imgUrl": "https://media.istockphoto.com/id/1455902697/photo/beautiful-young-woman-posing-in-city-park.jpg?s=612x612&w=0&k=20&c=gdgQgrV3xEM3YDGyOcp_MSN37_QnkfyeoYYExz4uEUU=",
+    "colour": "Blue",
+    "gender": "female"
+  }
+]

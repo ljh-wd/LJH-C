@@ -4,8 +4,8 @@ mongoose.set("strictQuery", false);
 
 const connectDB = async (url) => {
   mongoose.connect(url, {
-    useNewUrlParser: true,
     useUnifiedTopology: true,
+    useNewUrlParser: true,
   });
 };
 
