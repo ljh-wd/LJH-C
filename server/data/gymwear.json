@@ -1,0 +1,40 @@
+{
+  "name": "Gymwear",
+  "categories": [
+    {
+      "name": "multi colour tight fitted gym top",
+      "amount": 4.99,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "imgUrl": "https://media.istockphoto.com/id/544463710/photo/bearded-young-adult-cyclist-with-water-bottle-looking-at-camera.jpg?s=612x612&w=0&k=20&c=1KY_yUqWd8bD-i0Fkc2DX0F4Pu7vJ9aw7qiuKVy9xh0=",
+      "colour": ["Black", "Blue"],
+      "gender": "male"
+    },
+
+    {
+      "name": "Black gym shorts",
+      "amount": 2.99,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "imgUrl": "https://media.istockphoto.com/id/1345275845/photo/shot-of-a-muscular-young-man-posing-against-a-white-background.jpg?s=612x612&w=0&k=20&c=xJe1Uxdo5V4mrGBj-NtPVI-3uq3Df2089JCDUZJCiHg=",
+      "colour": "Black",
+      "gender": "male"
+    },
+
+    {
+      "name": "Black full gym set",
+      "amount": 32.99,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "imgUrl": "https://media.istockphoto.com/id/1179375804/photo/attractive-confident-strong-athletic-woman-with-great-abs-posing-with-kettlebell-looking-at.jpg?s=612x612&w=0&k=20&c=hBxkygD5MrNewep-WZFgv9ihR89DtnatvbRBhozHbZk=",
+      "colour": "Black",
+      "gender": "female"
+    },
+
+    {
+      "name": "Vibrant pink gym vest",
+      "amount": 4.99,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "imgUrl": "https://media.istockphoto.com/id/184309858/photo/woman-jogging-on-white-background.jpg?s=612x612&w=0&k=20&c=8tVogdjdP-xFH-BKeCLOwN7eaMDjkoQcSz5-Ic_kw1k=",
+      "colour": "Pink",
+      "gender": "female"
+    }
+  ]
+}
