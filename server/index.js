@@ -1,8 +1,12 @@
 require("dotenv").config();
+require("express-async-errors");
+
 const express = require("express");
 const cors = require("cors");
 const PORT = process.env.PORT || 8000;
 const connectDB = require("./DB/connectDB");
+const notFoundMiddleware = require("./Middleware/not-found");
+const errorHandlerMiddleware = require("./Middleware/error-handler");
 const topsRoute = require("./Routes/tops");
 
 const app = express();
@@ -16,11 +20,14 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use("/api/tops", topsRoute);
+
+app.use(notFoundMiddleware);
+app.use(errorHandlerMiddleware);
+
 app.get("/", (req, res) => {
   res.status(200).send("Welcome");
 });
-
-app.use("/api/tops", topsRoute);
 
 const start = async () => {
   try {
