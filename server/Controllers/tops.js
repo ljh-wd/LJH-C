@@ -1,5 +1,3 @@
-// TODO NumericFilter
-
 const Tops = require("../Models/tops");
 const { createCustomError } = require("../errors/custom-error");
 
