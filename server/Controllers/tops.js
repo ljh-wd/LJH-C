@@ -1,4 +1,5 @@
 const Tops = require("../Models/tops");
+const { createCustomError } = require("../errors/custom-error");
 
 const getAllTops = async (req, res) => {
   const { name, amount, sizes, colour, gender, numericFilters, sort } =
@@ -9,7 +10,7 @@ const getAllTops = async (req, res) => {
   if (name) queryObject.name = { $regex: name, $options: "i" };
   if (amount) queryObject.amount = amount;
   if (sizes) queryObject.sizes = sizes;
-  if (colour) queryObject.colour = colour;
+  if (colour) queryObject.colour = { $regex: colour, $options: "i" };
   if (gender) queryObject.gender = gender;
 
   if (numericFilters) {
@@ -50,4 +51,15 @@ const getAllTops = async (req, res) => {
   res.status(200).json({ products, nbHits: products.length });
 };
 
-module.exports = { getAllTops };
+const getSingleTop = async (req, res, next) => {
+  const { id: topID } = req.params;
+  const singleTop = await Tops.findById(topID);
+  if (!singleTop) {
+    return next(
+      createCustomError(`Product with the id of ${topID} doesn't exist`, 404)
+    );
+  }
+  res.status(200).json({ singleTop });
+};
+
+module.exports = { getAllTops, getSingleTop };

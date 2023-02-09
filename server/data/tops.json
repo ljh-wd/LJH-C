@@ -27,7 +27,7 @@
 
   {
     "name": "Pink T-shirt",
-    "amount": 7.0,
+    "amount": 7.99,
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://images.pexels.com/photos/6427233/pexels-photo-6427233.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "colour": "Pink",
