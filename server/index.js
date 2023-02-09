@@ -1,5 +1,10 @@
 require("dotenv").config();
 require("express-async-errors");
+// ! I believe this is what the 'express-async-errors' package is doing under the hood:
+// -------------------------------------------------------------------
+// ? const use = (fn) => (req, res, next) =>
+// ? Promise.resolve(fn(req, res, next).catch(next));
+// -------------------------------------------------------------------
 
 const express = require("express");
 const cors = require("cors");
