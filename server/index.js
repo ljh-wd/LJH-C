@@ -28,6 +28,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.status(200).send("Welcome");
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -41,10 +45,6 @@ app.use("/api/coats", coatsRoute);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
-
-app.get("/", (req, res) => {
-  res.status(200).send("Welcome");
-});
 
 const start = async () => {
   try {
