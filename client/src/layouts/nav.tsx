@@ -7,8 +7,8 @@ const Nav = () => {
     ]
 
   return (
-    <header className="w-full bg-gray-900 h-[500px]">
-        <h1 className="playfair">LJH-C</h1>
+    <header className="playfair">
+        <h1>LJH-C</h1>
         <nav>
             {
                 links.map(link => {
