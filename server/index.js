@@ -13,6 +13,12 @@ const connectDB = require("./DB/connectDB");
 const notFoundMiddleware = require("./Middleware/not-found");
 const errorHandlerMiddleware = require("./Middleware/error-handler");
 const topsRoute = require("./Routes/tops");
+const tailoringRoute = require("./Routes/tailoring");
+const legwearRoute = require("./Routes/legwear");
+const jumpersRoute = require("./Routes/jumpers");
+const gymwearRoute = require("./Routes/gymwear");
+const footwearRoute = require("./Routes/footwear");
+const coatsRoute = require("./Routes/coats");
 
 const app = express();
 
@@ -26,6 +32,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/tops", topsRoute);
+app.use("/api/tailoring", tailoringRoute);
+app.use("/api/legwear", legwearRoute);
+app.use("/api/jumpers", jumpersRoute);
+app.use("/api/gymwear", gymwearRoute);
+app.use("/api/footwear", footwearRoute);
+app.use("/api/coats", coatsRoute);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
