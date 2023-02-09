@@ -2,7 +2,7 @@ import Nav from "../layouts/nav"
 
 const Home = () => {
     return ( 
-        <div className="">
+        <div>
             <Nav />
         </div>
      );
