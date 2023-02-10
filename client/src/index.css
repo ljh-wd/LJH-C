@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-clip-path {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 .playfair {
   font-family: "PLayfair Display", sans-serif;
+}
+
+.landing-page {
+  background-image: url(..//assets/images/landing-page-img.jpg);
 }
