@@ -6,11 +6,12 @@ export default function Nav() {
     { name: "Home", href: "/", id: crypto.randomUUID() },
     { name: "Shop", href: "/shop", id: crypto.randomUUID() },
     { name: "Contact", href: "/contact", id: crypto.randomUUID() },
+    { name: "Basket", href: "/basket", id: crypto.randomUUID() },
   ];
 
   return (
     <nav className="w-full shadow-sm bg-[#222]">
-      <div className="justify-start h-full px-4 mx-auto  md:items-center md:flex md:px-8">
+      <div className="justify-around gap-40 h-full px-4 mx-auto  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="/">
