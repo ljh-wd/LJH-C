@@ -20,7 +20,9 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minus
             cupiditate dicta! Corrupti, omnis quidem.
           </p>
-          <PrimaryBtn>Shop Now</PrimaryBtn>
+          <a href="/shop">
+            <PrimaryBtn>Shop Now</PrimaryBtn>
+          </a>
         </div>
         <div className="landing-page lg:bg-clip-path w-full bg-cover bg-right bg-no-repeat h-full col-span-3 lg:col-span-4"></div>
       </div>
