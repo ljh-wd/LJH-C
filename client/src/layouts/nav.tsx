@@ -15,7 +15,7 @@ export default function Nav() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="/">
-              <h2 className="text-2xl md:text-3xl font-bold playfair text-white">
+              <h2 className="text-2xl md:text-2xl font-bold playfair text-white">
                 LJH-C
               </h2>
             </a>
