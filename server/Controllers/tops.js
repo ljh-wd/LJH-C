@@ -48,7 +48,7 @@ const getAllTops = async (req, res) => {
 
   const products = await result;
 
-  res.status(200).json({ products, nbHits: products.length });
+  res.status(200).json({ products });
 };
 
 const getSingleTop = async (req, res, next) => {
