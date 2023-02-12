@@ -1,69 +1,43 @@
-import ProductCard from "../Components/productCard";
+// import ProductCard from "../Components/productCard";
 import Nav from "../layouts/nav";
 import Footer from "../layouts/footer";
+import { useQuery } from "@tanstack/react-query";
+import fetchProducts from "../Lib/axios";
+import ProductCard from "../Components/productCard";
 
 const Tops = () => {
-  // TODO const {loading, data, error} = useFetch(url)
+  const { data, error, isError, isSuccess, isLoading } = useQuery(
+    ["Tops"],
+    () => fetchProducts("http://localhost:8000/api/tops")
+  );
 
-  let data = [
-    {
-      title: "Plain white top",
-      imgUrl:
-        "https://media.istockphoto.com/id/1048695348/photo/cheerful-young-man-pointing-at-himself.jpg?s=612x612&w=0&k=20&c=36UH2zZDheSZM4FykeDBVYCpi9MtibK6HYptC2B0aNs=",
-      id: crypto.randomUUID(),
-      alt: "White top",
-      amount: 7.99,
-    },
-    {
-      title: "Plain white top",
-      imgUrl:
-        "https://media.istockphoto.com/id/1048695348/photo/cheerful-young-man-pointing-at-himself.jpg?s=612x612&w=0&k=20&c=36UH2zZDheSZM4FykeDBVYCpi9MtibK6HYptC2B0aNs=",
-      id: crypto.randomUUID(),
-      alt: "White top",
-      amount: 7.99,
-    },
-    {
-      title: "Plain white top",
-      imgUrl:
-        "https://media.istockphoto.com/id/1048695348/photo/cheerful-young-man-pointing-at-himself.jpg?s=612x612&w=0&k=20&c=36UH2zZDheSZM4FykeDBVYCpi9MtibK6HYptC2B0aNs=",
-      id: crypto.randomUUID(),
-      alt: "White top",
-      amount: 7.99,
-    },
-    {
-      title: "Plain white top",
-      imgUrl:
-        "https://media.istockphoto.com/id/1048695348/photo/cheerful-young-man-pointing-at-himself.jpg?s=612x612&w=0&k=20&c=36UH2zZDheSZM4FykeDBVYCpi9MtibK6HYptC2B0aNs=",
-      id: crypto.randomUUID(),
-      alt: "White top",
-      amount: 7.99,
-    },
-  ];
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (isError) {
+    console.log("Error", error);
+    return <div>Failed to fetch</div>;
+  }
+
+  if (isSuccess) {
+    console.log(data.products);
+  }
+
   return (
     <>
       <Nav />
-      {/* {loading && <div></div>}
-      {error && <div></div>}
-      {data &&  <div className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-y-20 gap-x-14 mt-10 mb-5">
-        {data.map((product) => (
-          <ProductCard
-            imgUrl={product.imgUrl}
-            title={product.title}
-            alt={product.alt}
-            amount={product.amount}
-          />
-        ))}
-      </div>} */}
-      <div className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-y-20 gap-x-14 mt-10 mb-5">
-        {data.map((product) => (
-          <ProductCard
-            imgUrl={product.imgUrl}
-            title={product.title}
-            alt={product.alt}
-            amount={product.amount}
-          />
-        ))}
-      </div>
+      {data && (
+        <div className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-y-20 gap-x-14 mt-10 mb-5">
+          {data.products.map((product: any) => (
+            <ProductCard
+              title={product.name}
+              imgUrl={product.imgUrl}
+              amount={product.amount}
+              key={product._id}
+            />
+          ))}
+        </div>
+      )}
       <Footer />
     </>
   );

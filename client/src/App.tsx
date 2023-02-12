@@ -1,10 +1,9 @@
 import Home from "./Pages/home";
 import Categories from "./Pages/categories-page";
 import { Routes, Route } from "react-router-dom";
-import Nav from "./layouts/nav";
-import Tops from "./Pages/tops";
 import Jumpers from "./Pages/jumpers";
 import Coats from "./Pages/coats";
+import Tops from "./Pages/tops";
 import Tailoring from "./Pages/tailoring";
 import Gymwear from "./Pages/gymwear";
 import Legwear from "./Pages/legwear";
