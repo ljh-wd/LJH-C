@@ -34,6 +34,7 @@ const Tops = () => {
               imgUrl={product.imgUrl}
               amount={product.amount}
               key={product._id}
+              id={product._id}
             />
           ))}
         </div>
