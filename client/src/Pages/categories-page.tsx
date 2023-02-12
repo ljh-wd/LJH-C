@@ -70,13 +70,18 @@ const Categories = () => {
       <Nav />
       <div className="w-full h-screen flex flex-col">
         <div className="h-full flex flex-col justify-center items-center w-full overflow-hidden">
+          <div className="p-20 bg-slate-100 w-full flex justify-center items-center">
+            <h1 className="text-2xl playfair uppercase bg-black px-7 py-1 rounded shadow-md text-[#eee]">
+              Products
+            </h1>
+          </div>
           <div className="w-full h-full flex justify-center items-center bg-slate-100 rounded shadow">
             <Carousel
               showIndicators={false}
               width={900}
               centerMode={true}
-              centerSlidePercentage={45}
-              autoFocus={false}
+              centerSlidePercentage={35}
+              autoFocus={true}
               infiniteLoop={true}
               autoPlay={true}
               swipeable={true}

@@ -2,6 +2,13 @@ import Home from "./Pages/home";
 import Categories from "./Pages/categories-page";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./layouts/nav";
+import Tops from "./Pages/tops";
+import Jumpers from "./Pages/jumpers";
+import Coats from "./Pages/coats";
+import Tailoring from "./Pages/tailoring";
+import Gymwear from "./Pages/gymwear";
+import Legwear from "./Pages/legwear";
+import Footwear from "./Pages/footwear";
 
 function App() {
   return (
@@ -10,13 +17,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/shop">
           <Route index element={<Categories />} />
-          <Route path="/shop/tops" element={<><Nav  /><h1>Tops</h1></>} />
-          <Route path="/shop/coats" element={<><Nav  /><h1>Coats</h1></>} />
-          <Route path="/shop/jumpers" element={<><Nav  /><h1>Jumpers</h1></>} />
-          <Route path="/shop/legwear" element={<><Nav  /><h1>Legwear</h1></>} />
-          <Route path="/shop/tailoring" element={<><Nav  /><h1>Tailoring</h1></>} />
-          <Route path="/shop/gymwear" element={<><Nav  /><h1>Gymwear</h1></>} />
-          <Route path="/shop/footwear" element={<><Nav  /><h1>Footwear</h1></>} />
+          <Route path="/shop/tops" element={<Tops />} />
+          <Route path="/shop/coats" element={<Coats />} />
+          <Route path="/shop/jumpers" element={<Jumpers />} />
+          <Route path="/shop/legwear" element={<Legwear />} />
+          <Route path="/shop/tailoring" element={<Tailoring />} />
+          <Route path="/shop/gymwear" element={<Gymwear />} />
+          <Route path="/shop/footwear" element={<Footwear />} />
         </Route>
       </Routes>
     </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PrimaryBtn from "../layouts/primary-btn";
+import ProductBtn from "./productBtn";
 
 type CardProperties = {
   imgUrl: string;
@@ -9,18 +9,15 @@ type CardProperties = {
 
 const CategoryCard = (props: CardProperties) => {
   return (
-    <div className="w-[400px] h-full  p-5 card">
-      <div className="flex flex-col justify-between items-center card-content p-4 h-full bg-white shadow-md rounded-lg">
-        <img
-          className="h-[470px] p-1 w-full rounded-lg"
-          src={props.imgUrl}
-          alt="Product Image"
-        />
-        <h3 className="text-2xl p-3 playfair">{props.title}</h3>
-
-        <div>
-          <Link to={props.href}>
-            <PrimaryBtn>Shop</PrimaryBtn>
+    <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+      <img src={props.imgUrl} className="h-80 w-72 object-cover rounded-t-xl" />
+      <div className="px-4 py-3 w-72">
+        <p className="text-lg playfair text-black truncate block capitalize my-2">
+          {props.title}
+        </p>
+        <div className="flex items-center justify-center">
+          <Link to="/shop/tops">
+            <ProductBtn>Shop</ProductBtn>
           </Link>
         </div>
       </div>

@@ -9,6 +9,13 @@
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .playfair {
   font-family: "PLayfair Display", sans-serif;
 }
@@ -23,9 +30,5 @@ body {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-color: #e8e8e8;
-}
-
-img {
-  aspect-ratio: 1 / 2;
+  background-color: rgb(241 245 249 / 1);
 }
