@@ -6,9 +6,8 @@ import fetchProducts from "../Lib/axios";
 import ProductCard from "../Components/productCard";
 
 const Tops = () => {
-  const { data, error, isError, isSuccess, isLoading } = useQuery(
-    ["Tops"],
-    () => fetchProducts("http://localhost:8000/api/tops")
+  const { data, error, isError, isLoading } = useQuery(["Tops"], () =>
+    fetchProducts("http://localhost:8000/api/tops")
   );
 
   if (isLoading) {
@@ -17,10 +16,6 @@ const Tops = () => {
   if (isError) {
     console.log("Error", error);
     return <div>Failed to fetch</div>;
-  }
-
-  if (isSuccess) {
-    console.log(data.products);
   }
 
   return (

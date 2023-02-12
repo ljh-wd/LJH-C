@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Jumpers from "./Pages/jumpers";
 import Coats from "./Pages/coats";
 import Tops from "./Pages/tops";
+import TopsId from "./Pages/topsId";
 import Tailoring from "./Pages/tailoring";
 import Gymwear from "./Pages/gymwear";
 import Legwear from "./Pages/legwear";
@@ -16,7 +17,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/shop">
           <Route index element={<Categories />} />
-          <Route path="/shop/tops" element={<Tops />} />
+          <Route path="/shop/tops">
+            <Route index element={<Tops />} />
+            <Route path="/shop/tops/:id" element={<TopsId />} />
+          </Route>
           <Route path="/shop/coats" element={<Coats />} />
           <Route path="/shop/jumpers" element={<Jumpers />} />
           <Route path="/shop/legwear" element={<Legwear />} />
