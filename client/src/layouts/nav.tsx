@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [navbar, setNavbar] = useState<Boolean>(false);
@@ -14,11 +15,11 @@ export default function Nav() {
       <div className="justify-around gap-40 h-full px-4 mx-auto  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="/">
+            <Link to="/">
               <h2 className="text-2xl md:text-2xl font-bold playfair text-white">
                 LJH-C
               </h2>
-            </a>
+            </Link>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -66,12 +67,13 @@ export default function Nav() {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {links.map((link) => (
                 <li key={link.id}>
-                  <a
-                    className="hover:text-lg transition-all uppercase playfair md:text-l text-white"
-                    href={link.href}
+                  <Link
+                    className="hover:text-lg transition-all uppercase playfair
+                    md:text-l text-white"
+                    to={link.href}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
