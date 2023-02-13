@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import PrimaryBtn from "../layouts/primary-btn";
+import ProductBtn from "./productBtn";
+import { currencyFormatter } from "../utils/currencyFormatter";
 
 type CardProperties = {
   imgUrl: string;
@@ -7,41 +8,50 @@ type CardProperties = {
   amount: number;
   id: string;
   gender: string;
-  color: string[];
+  colour: string[];
+  sizes: string[];
 };
 
 const ProductIdCard = (props: CardProperties) => {
   return (
-    <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+    <div className="bg-white w-80 shadow-md rounded-xl duration-500  hover:shadow-xl h-fit">
       <Link to={`/shop/tops/${props.id}`}>
         <img
           src={props.imgUrl}
-          className="h-80 w-72 object-cover rounded-t-xl"
+          className="h-80 w-80 object-cover rounded-t-xl"
         />
         <div className="px-4 py-3 w-72">
           <span className="text-gray-400 mr-3 uppercase text-xs">LJH-C</span>
-          <p className="text-lg font-bold text-black truncate block capitalize">
+          <h4 className="text-lg font-bold text-black truncate block capitalize playfair">
             {props.title}
-          </p>
-          <div className="flex items-center">
-            <p className="text-lg font-semibold text-black cursor-auto my-3">
-              {props.amount}
+          </h4>
+          <div className="flex items-start flex-col">
+            <p className="text-lg text-zinc-500 font-light cursor-auto my-3">
+              {currencyFormatter.format(props.amount)}
             </p>
-            <div className="ml-auto">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                className="bi bi-bag-plus"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
-                />
-                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-              </svg>
+            <p className="font-thin text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident, ullam.
+            </p>
+            <p className="py-2 text-zinc-700">
+              <span className="text-black">Colour: </span>
+              {props.colour.join(", ")}
+            </p>
+            <p className="py-2 text-zinc-700">
+              <span className="text-black">Gender:</span> {props.gender}
+            </p>
+            <div className="py-4 flex justify-between items-center gap-5">
+              <ProductBtn>Add To Basket</ProductBtn>
+              <select name="sizes" required={true}>
+                <option disabled value="" selected>
+                  Choose a size
+                </option>
+                <option value="XS">{props.sizes[0]}</option>
+                <option value="S">{props.sizes[1]}</option>
+                <option value="M">{props.sizes[2]}</option>
+                <option value="L">{props.sizes[3]}</option>
+                <option value="XL">{props.sizes[4]}</option>
+              </select>
             </div>
           </div>
         </div>

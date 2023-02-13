@@ -24,7 +24,7 @@ const Home = () => {
             <PrimaryBtn>Shop Now</PrimaryBtn>
           </a>
         </div>
-        <div className="landing-page lg:bg-clip-path w-full bg-cover bg-right bg-no-repeat h-full col-span-3 lg:col-span-4"></div>
+        <div className="landing-page bg-clip-path w-full bg-contain xl:bg-cover bg-right bg-no-repeat h-full col-span-3 lg:col-span-4"></div>
       </div>
       <Footer />
     </div>
