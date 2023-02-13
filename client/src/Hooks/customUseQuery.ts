@@ -1,10 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
 import fetchProducts from "../Lib/axios";
 
-export default function useCustomQuery(url: string, queryKey: string[]) {
-  const { isError, isLoading, data, error } = useQuery(queryKey, () =>
+export default function useCustomQuery(key: string, url: string) {
+  const { isError, isLoading, data, error } = useQuery([key], () =>
     fetchProducts(url)
   );
+  if (isLoading) return isLoading;
+  if (isError) return error;
 
-  return { data, isLoading, error, isError };
+  console.log(data);
+
+  return { data, isLoading, error };
 }

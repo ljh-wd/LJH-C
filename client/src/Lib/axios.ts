@@ -8,7 +8,7 @@ const fetchProducts = async (url: string) => {
       return response.data;
     })
     .catch((err) => {
-      console.log(err.message);
+      throw new Error("Failed to fetch products");
     });
 
   return response;
