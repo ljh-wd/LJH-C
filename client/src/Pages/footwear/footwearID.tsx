@@ -1,39 +1,51 @@
-// TODO customUseQuery() Hook.
-// TODO Make product card with all details.
-
-// import ProductCard from "../Components/productCard";
 import Nav from "../../layouts/nav";
 import Footer from "../../layouts/footer";
-import ProductCard from "../../Components/productCard";
+import ProductIdCard from "../../Components/productIdCard";
 import useCustomQuery from "../../Hooks/customUseQuery";
+import { useParams } from "react-router-dom";
 
-const Tops = () => {
+const FootwearID = () => {
+  const _id = useParams();
+  const FootwearID = _id.id;
   const { data, error, isLoading } = useCustomQuery(
-    "tops",
-    "http://localhost:8000/api/tops"
+    "footwear",
+    "http://localhost:8000/api/footwear"
+  );
+
+  let filteredArr = data?.products.filter(
+    (product: any) => product._id === FootwearID
   );
 
   return (
     <>
       <Nav />
+
+      {error && <div>{error}</div>}
+      {isLoading && <div>Loading...</div>}
       {data && (
-        <div className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-y-20 gap-x-14 mt-10 mb-5">
-          {error && <div>{error}</div>}
-          {isLoading && <div>Loading</div>}
-          {data.products.map((product: any) => (
-            <ProductCard
-              title={product.name}
-              imgUrl={product.imgUrl}
-              amount={product.amount}
-              key={product._id}
-              id={product._id}
-            />
+        <div className="h-screen">
+          {filteredArr.map((item: any) => (
+            <div
+              className="w-full mx-auto grid grid-cols-1  justify-items-center mt-10 h-screen"
+              key={item._id}
+            >
+              <ProductIdCard
+                gender={item.gender}
+                sizes={item.sizes}
+                colour={item.colour}
+                title={item.name}
+                amount={item.amount}
+                imgUrl={item.imgUrl}
+                id={item._id}
+              />
+            </div>
           ))}
         </div>
       )}
+
       <Footer />
     </>
   );
 };
 
-export default Tops;
+export default FootwearID;

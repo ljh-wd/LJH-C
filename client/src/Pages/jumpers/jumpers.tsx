@@ -1,16 +1,12 @@
-// TODO customUseQuery() Hook.
-// TODO Make product card with all details.
-
-// import ProductCard from "../Components/productCard";
 import Nav from "../../layouts/nav";
 import Footer from "../../layouts/footer";
 import ProductCard from "../../Components/productCard";
 import useCustomQuery from "../../Hooks/customUseQuery";
 
-const Tops = () => {
+const Jumpers = () => {
   const { data, error, isLoading } = useCustomQuery(
-    "tops",
-    "http://localhost:8000/api/tops"
+    "jumpers",
+    "http://localhost:8000/api/jumpers"
   );
 
   return (
@@ -22,6 +18,7 @@ const Tops = () => {
           {isLoading && <div>Loading</div>}
           {data.products.map((product: any) => (
             <ProductCard
+              href={"jumpers"}
               title={product.name}
               imgUrl={product.imgUrl}
               amount={product.amount}
@@ -36,4 +33,4 @@ const Tops = () => {
   );
 };
 
-export default Tops;
+export default Jumpers;

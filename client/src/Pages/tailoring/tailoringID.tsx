@@ -4,16 +4,16 @@ import ProductIdCard from "../../Components/productIdCard";
 import useCustomQuery from "../../Hooks/customUseQuery";
 import { useParams } from "react-router-dom";
 
-const TopsId = () => {
+const TailoringID = () => {
   const _id = useParams();
-  const topID = _id.id;
+  const TailorID = _id.id;
   const { data, error, isLoading } = useCustomQuery(
-    "tops",
-    "http://localhost:8000/api/tops"
+    "tailoring",
+    "http://localhost:8000/api/tailoring"
   );
 
   let filteredArr = data?.products.filter(
-    (product: any) => product._id === topID
+    (product: any) => product._id === TailorID
   );
 
   return (
@@ -48,4 +48,4 @@ const TopsId = () => {
   );
 };
 
-export default TopsId;
+export default TailoringID;

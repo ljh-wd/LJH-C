@@ -22,6 +22,7 @@ const Tops = () => {
           {isLoading && <div>Loading</div>}
           {data.products.map((product: any) => (
             <ProductCard
+              href="tops"
               title={product.name}
               imgUrl={product.imgUrl}
               amount={product.amount}

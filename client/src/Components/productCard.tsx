@@ -6,12 +6,13 @@ type CardProperties = {
   title: string;
   amount: number;
   id: string;
+  href: string;
 };
 
 const ProductCard = (props: CardProperties) => {
   return (
     <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-      <Link to={`/shop/tops/${props.id}`}>
+      <Link to={`/shop/${props.href}/${props.id}`}>
         <img
           src={props.imgUrl}
           className="h-80 w-72 object-cover rounded-t-xl"

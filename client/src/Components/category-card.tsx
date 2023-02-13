@@ -16,7 +16,7 @@ const CategoryCard = (props: CardProperties) => {
           {props.title}
         </p>
         <div className="flex items-center justify-center">
-          <Link to="/shop/tops">
+          <Link to={props.href}>
             <ProductBtn>Shop</ProductBtn>
           </Link>
         </div>

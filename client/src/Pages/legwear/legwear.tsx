@@ -7,10 +7,10 @@ import Footer from "../../layouts/footer";
 import ProductCard from "../../Components/productCard";
 import useCustomQuery from "../../Hooks/customUseQuery";
 
-const Tops = () => {
+const Legwear = () => {
   const { data, error, isLoading } = useCustomQuery(
-    "tops",
-    "http://localhost:8000/api/tops"
+    "legwear",
+    "http://localhost:8000/api/legwear"
   );
 
   return (
@@ -22,6 +22,7 @@ const Tops = () => {
           {isLoading && <div>Loading</div>}
           {data.products.map((product: any) => (
             <ProductCard
+              href="legwear"
               title={product.name}
               imgUrl={product.imgUrl}
               amount={product.amount}
@@ -36,4 +37,4 @@ const Tops = () => {
   );
 };
 
-export default Tops;
+export default Legwear;
