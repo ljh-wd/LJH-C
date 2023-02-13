@@ -4,8 +4,6 @@
 // import ProductCard from "../Components/productCard";
 import Nav from "../layouts/nav";
 import Footer from "../layouts/footer";
-import { useQuery } from "@tanstack/react-query";
-import fetchProducts from "../Lib/axios";
 import ProductCard from "../Components/productCard";
 import useCustomQuery from "../Hooks/customUseQuery";
 

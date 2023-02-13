@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PrimaryBtn from "../layouts/primary-btn";
+import { currencyFormatter } from "../utils/currencyFormatter";
 
 type CardProperties = {
   imgUrl: string;
@@ -23,7 +23,7 @@ const ProductCard = (props: CardProperties) => {
           </p>
           <div className="flex items-center">
             <p className="text-lg font-semibold text-black cursor-auto my-3">
-              {props.amount}
+              {currencyFormatter.format(props.amount)}
             </p>
             <div className="ml-auto">
               <svg
