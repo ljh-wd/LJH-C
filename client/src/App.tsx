@@ -1,3 +1,11 @@
+// TODO Add Contact Page: FORM
+// TODO Add 404 page
+// TODO Add Basket: Server, Localstorage?
+
+// ! ------------------------------
+// ! SERVER ERROR TO CHECKOUT FIRST
+// ! ------------------------------
+
 import Home from "./Pages/home";
 import Categories from "./Pages/categories-page";
 import { Routes, Route } from "react-router-dom";
@@ -12,7 +20,6 @@ import TailoringID from "./Pages/tailoring/tailoringID";
 import Gymwear from "./Pages/gymwear/gymwear";
 import GymwearID from "./Pages/gymwear/gymwearID";
 import FootwearID from "./Pages/footwear/footwearID";
-import Footer from "./layouts/footer";
 import Footwear from "./Pages/footwear/footwear";
 import Legwear from "./Pages/legwear/legwear";
 import LegwearId from "./Pages/legwear/legwearID";
