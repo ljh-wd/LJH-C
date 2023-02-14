@@ -1,10 +1,5 @@
 // TODO Add Contact Page: FORM
-// TODO Add 404 page
 // TODO Add Basket: Server, Localstorage?
-
-// ! ------------------------------
-// ! SERVER ERROR TO CHECKOUT FIRST
-// ! ------------------------------
 
 import Home from "./Pages/home";
 import Categories from "./Pages/categories-page";
@@ -23,11 +18,13 @@ import FootwearID from "./Pages/footwear/footwearID";
 import Footwear from "./Pages/footwear/footwear";
 import Legwear from "./Pages/legwear/legwear";
 import LegwearId from "./Pages/legwear/legwearID";
+import NotFound from "./Pages/404-page";
 
 function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/shop">
           <Route index element={<Categories />} />
