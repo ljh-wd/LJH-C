@@ -19,6 +19,7 @@ import Footwear from "./Pages/footwear/footwear";
 import Legwear from "./Pages/legwear/legwear";
 import LegwearId from "./Pages/legwear/legwearID";
 import NotFound from "./Pages/404-page";
+import Contact from "./Pages/contact";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
             <Route path="/shop/legwear/:id" element={<LegwearId />} />
           </Route>
         </Route>
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
