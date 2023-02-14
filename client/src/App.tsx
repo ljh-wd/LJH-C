@@ -20,6 +20,7 @@ import Legwear from "./Pages/legwear/legwear";
 import LegwearId from "./Pages/legwear/legwearID";
 import NotFound from "./Pages/404-page";
 import Contact from "./Pages/contact";
+import Basket from "./Pages/basket";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
           </Route>
         </Route>
         <Route path="/contact" element={<Contact />} />
+        <Route path="/basket" element={<Basket />} />
       </Routes>
     </div>
   );
