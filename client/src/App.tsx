@@ -4,8 +4,8 @@
 import Home from "./Pages/home";
 import Categories from "./Pages/categories-page";
 import { Routes, Route } from "react-router-dom";
-import Tops from "./Pages/tops/tops";
-import TopsId from "./Pages/tops/topsId";
+import Tops from "./Pages/products/products";
+import ProductsID from "./Pages/products/productsID";
 import Jumpers from "./Pages/jumpers/jumpers";
 import JumpersId from "./Pages/jumpers/jumpersID";
 import CoatsId from "./Pages/coats/coatsID";
@@ -21,6 +21,7 @@ import LegwearId from "./Pages/legwear/legwearID";
 import NotFound from "./Pages/404-page";
 import Contact from "./Pages/contact";
 import Basket from "./Pages/basket";
+import Products from "./Pages/products/products";
 
 function App() {
   return (
@@ -29,35 +30,8 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/shop">
-          <Route index element={<Categories />} />
-          <Route path="/shop/tops">
-            <Route index element={<Tops />} />
-            <Route path="/shop/tops/:id" element={<TopsId />} />
-          </Route>
-          <Route path="/shop/jumpers">
-            <Route index element={<Jumpers />} />
-            <Route path="/shop/jumpers/:id" element={<JumpersId />} />
-          </Route>
-          <Route path="/shop/coats">
-            <Route index element={<Coats />} />
-            <Route path="/shop/coats/:id" element={<CoatsId />} />
-          </Route>
-          <Route path="/shop/tailoring">
-            <Route index element={<Tailoring />} />
-            <Route path="/shop/tailoring/:id" element={<TailoringID />} />
-          </Route>
-          <Route path="/shop/gymwear">
-            <Route index element={<Gymwear />} />
-            <Route path="/shop/gymwear/:id" element={<GymwearID />} />
-          </Route>
-          <Route path="/shop/footwear">
-            <Route index element={<Footwear />} />
-            <Route path="/shop/footwear/:id" element={<FootwearID />} />
-          </Route>
-          <Route path="/shop/legwear">
-            <Route index element={<Legwear />} />
-            <Route path="/shop/legwear/:id" element={<LegwearId />} />
-          </Route>
+          <Route index element={<Products />} />
+          <Route path="/shop/products/:id" element={<ProductsID />} />
         </Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/basket" element={<Basket />} />
