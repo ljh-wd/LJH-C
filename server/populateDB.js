@@ -1,8 +1,8 @@
 const connectDB = require("../server/DB/connectDB");
 require("dotenv").config();
 
-const Tops = require("./models/Tops");
-const jsonTops = require("./data/tops.json");
+const Products = require("./models/Products");
+const jsonProducts = require("./data/Products.json");
 
 // const Footwear = require("./models/footwear");
 // const jsonFootwear = require("./data/footwear.json");
@@ -25,8 +25,8 @@ const jsonTops = require("./data/tops.json");
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
-    await Tops.deleteMany();
-    await Tops.create(jsonTops);
+    await Products.deleteMany();
+    await Products.create(jsonProducts);
 
     process.exit(0);
   } catch (error) {

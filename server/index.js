@@ -12,13 +12,7 @@ const PORT = process.env.PORT || 8000;
 const connectDB = require("./DB/connectDB");
 const notFoundMiddleware = require("./Middleware/not-found");
 const errorHandlerMiddleware = require("./Middleware/error-handler");
-const topsRoute = require("./Routes/tops");
-const tailoringRoute = require("./Routes/tailoring");
-const legwearRoute = require("./Routes/legwear");
-const jumpersRoute = require("./Routes/jumpers");
-const gymwearRoute = require("./Routes/gymwear");
-const footwearRoute = require("./Routes/footwear");
-const coatsRoute = require("./Routes/coats");
+const productsRoute = require("./Routes/products");
 
 const app = express();
 
@@ -35,13 +29,7 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api/tops", topsRoute);
-app.use("/api/tailoring", tailoringRoute);
-app.use("/api/legwear", legwearRoute);
-app.use("/api/jumpers", jumpersRoute);
-app.use("/api/gymwear", gymwearRoute);
-app.use("/api/footwear", footwearRoute);
-app.use("/api/coats", coatsRoute);
+app.use("/api/products", productsRoute);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);

@@ -1,7 +1,7 @@
-const Legwear = require("../Models/legwear");
+const Products = require("../Models/Products");
 const { createCustomError } = require("../errors/custom-error");
 
-const getAllLegwear = async (req, res) => {
+const getAllProducts = async (req, res) => {
   const { name, amount, sizes, colour, gender, numericFilters, sort } =
     req.query;
 
@@ -38,7 +38,7 @@ const getAllLegwear = async (req, res) => {
     });
   }
 
-  let result = Legwear.find(queryObject);
+  let result = Products.find(queryObject);
   if (sort) {
     // ? sortList will split the result to add a comma, then it will add a space. This allows chain sorting.
     // ? Then the result will be sorted if sort is queried, else the result wont be sorted and the default value will apply.
@@ -48,21 +48,21 @@ const getAllLegwear = async (req, res) => {
 
   const products = await result;
 
-  res.status(200).json({ products, nbHits: products.length });
+  res.status(200).json({ products });
 };
 
-const getSingleLegwear = async (req, res, next) => {
-  const { id: legwearID } = req.params;
-  const singleLegwear = await Legwear.findById(legwearID);
-  if (!singleLegwear) {
+const getSingleProduct = async (req, res, next) => {
+  const { id: ProductID } = req.params;
+  const singleProduct = await Products.findById(ProductID);
+  if (!singleProduct) {
     return next(
       createCustomError(
-        `Product with the id of ${legwearID} doesn't exist`,
+        `Product with the id of ${ProductID} doesn't exist`,
         404
       )
     );
   }
-  res.status(200).json({ singleLegwear });
+  res.status(200).json({ singleProduct });
 };
 
-module.exports = { getAllLegwear, getSingleLegwear };
+module.exports = { getAllProducts, getSingleProduct };
