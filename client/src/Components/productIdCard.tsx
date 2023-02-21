@@ -38,8 +38,8 @@ const ProductIdCard = (props: CardProperties) => {
           </p>
           <div className="py-4 flex justify-between items-center gap-5">
             <ProductBtn>Add To Basket</ProductBtn>
-            <select name="sizes" required={true}>
-              <option disabled value="" selected>
+            <select name="sizes" required defaultValue="" aria-selected>
+              <option disabled value="">
                 Choose a size
               </option>
               <option value="XS">{props.sizes[0]}</option>
