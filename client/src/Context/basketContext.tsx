@@ -1,34 +1,40 @@
-import { ReactNode, createContext } from "react";
-import BasketModal from "../layouts/basket/basket-modal";
-
+import { createContext, ReactNode, useContext } from "react";
+import useLocalStorage from "../Hooks/useLocalStorage";
 type BasketProviderProps = {
   children: ReactNode;
 };
-
-type BasketContext = {
-  increaseQty: (number: number) => void;
-  decreaseQty: (number: number) => void;
-  removeFromBasket: (id: string) => void;
+type BasketContextProps = {
+  addToBasket: (id: any) => void;
 };
 
-const basketContext = createContext({} as BasketContext);
+type BasketItem = {
+  id: string;
+  quantity: number;
+};
 
-export function BasketContextProvider({ children }: BasketProviderProps) {
-  function increaseQty(number: number) {
-    console.log("Added to basket");
+const basketContext = createContext({} as BasketContextProps);
+
+export function useBasket() {
+  return useContext(basketContext);
+}
+
+export function BasketProvider({ children }: BasketProviderProps) {
+  const [items, setItems] = useLocalStorage<BasketItem[]>("Items", []);
+
+  function addToBasket(id: any) {
+    setItems((prevArray: []) => {
+      return [...prevArray, { id: id }];
+    });
   }
-  function decreaseQty(number: number) {}
-  function removeFromBasket(id: string) {}
+  // ! localStorage.clear();
+  console.log(items);
   return (
     <basketContext.Provider
       value={{
-        increaseQty,
-        decreaseQty,
-        removeFromBasket,
+        addToBasket,
       }}
     >
       {children}
-      <BasketModal />
     </basketContext.Provider>
   );
 }
