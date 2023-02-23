@@ -1,6 +1,7 @@
-import { useBasket } from "../../Context/basketContext";
-import useCustomQuery from "../../Hooks/customUseQuery";
-import { currencyFormatter } from "../../utils/currencyFormatter";
+import { useBasket } from "../Context/basketContext";
+import { currencyFormatter } from "../utils/currencyFormatter";
+import fetchProducts from "../Lib/axios";
+import { useQuery } from "@tanstack/react-query";
 
 interface Props {
   qty: number;
@@ -8,10 +9,17 @@ interface Props {
 }
 
 const BasketCard = ({ id, qty }: Props) => {
-  const { data } = useCustomQuery(
-    "Products",
-    "http://localhost:8000/api/products"
-  );
+  function wait(duration: number) {
+    return new Promise((resolve) => setTimeout(resolve, duration));
+  }
+
+  const { data } = useQuery({
+    queryKey: ["Products"],
+    queryFn: () =>
+      wait(1500).then(() =>
+        fetchProducts("http://localhost:8000/api/products")
+      ),
+  });
 
   const { removeFromBasket, increaseQuantity, decreaseQuantity } = useBasket();
 

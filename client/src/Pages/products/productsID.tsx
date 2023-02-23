@@ -1,16 +1,26 @@
 import Nav from "../../layouts/nav";
 import Footer from "../../layouts/footer";
 import ProductIdCard from "../../Components/productIdCard";
-import useCustomQuery from "../../Hooks/customUseQuery";
+import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
+import fetchProducts from "../../Lib/axios";
+import ErrorPage from "../../layouts/error";
+import Loading from "../../layouts/loading";
 
 const ProductsID = () => {
   const _id = useParams();
   const topID = _id.id;
-  const { data, error, isLoading } = useCustomQuery(
-    "tops",
-    "http://localhost:8000/api/products"
-  );
+  function wait(duration: number) {
+    return new Promise((resolve) => setTimeout(resolve, duration));
+  }
+
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ["Products"],
+    queryFn: () =>
+      wait(1500).then(() =>
+        fetchProducts("http://localhost:8000/api/products")
+      ),
+  });
 
   let filteredArr = data?.products.filter(
     (product: any) => product._id === topID
@@ -20,8 +30,8 @@ const ProductsID = () => {
     <>
       <Nav />
 
-      {error && <div>{error}</div>}
-      {isLoading && <div>Loading...</div>}
+      {isError && <ErrorPage />}
+      {isLoading && <Loading />}
       {data && (
         <div className="h-screen">
           {filteredArr.map((item: any) => (

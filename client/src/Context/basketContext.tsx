@@ -1,6 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 import useLocalStorage from "../Hooks/useLocalStorage";
-import BasketModal from "../layouts/basket/basket-modal";
 type BasketProviderProps = {
   children: ReactNode;
 };
@@ -86,7 +85,6 @@ export function BasketProvider({ children }: BasketProviderProps) {
       }}
     >
       {children}
-      <BasketModal />
     </basketContext.Provider>
   );
 }
