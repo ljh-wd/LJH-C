@@ -1,7 +1,14 @@
 import PrimaryBtn from "../layouts/primary-btn";
 import { Link } from "react-router-dom";
+import { useBasket } from "../Context/basketContext";
+import useCustomQuery from "../Hooks/customUseQuery";
+import ProductsID from "./products/productsID";
+import BasketCard from "../layouts/basket/basketCard";
 
 const Basket = () => {
+  const { items, decreaseQuantity, increaseQuantity, removeFromBasket } =
+    useBasket();
+
   return (
     <>
       <div className="w-full h-full bg-black  bg-opacity-90 top-0 overflow-y-auto overflow-x-hidden fixed sticky-0">
@@ -19,6 +26,9 @@ const Basket = () => {
                   Basket
                 </p>
               </div>
+              {items.map((item: any) => (
+                <BasketCard qty={item.qty} key={item.id} id={item.id} />
+              ))}
             </div>
             <div className="lg:w-96 md:w-8/12 w-full bg-gray-100 :bg-gray-900 h-full">
               <div className="flex flex-col lg:h-screen h-auto lg:px-8 md:px-7 px-4 lg:py-20 md:py-10 py-6 justify-between overflow-y-auto">

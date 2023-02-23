@@ -4,12 +4,16 @@ type BasketProviderProps = {
   children: ReactNode;
 };
 type BasketContextProps = {
-  addToBasket: (id: any) => void;
+  getQuantity: (id: string) => number;
+  increaseQuantity: (id: string) => void;
+  decreaseQuantity: (id: string) => void;
+  removeFromBasket: (id: string) => void;
+  items: [];
 };
 
 type BasketItem = {
   id: string;
-  quantity: number;
+  qty: number;
 };
 
 const basketContext = createContext({} as BasketContextProps);
@@ -21,17 +25,56 @@ export function useBasket() {
 export function BasketProvider({ children }: BasketProviderProps) {
   const [items, setItems] = useLocalStorage<BasketItem[]>("Items", []);
 
-  function addToBasket(id: any) {
-    setItems((prevArray: []) => {
-      return [...prevArray, { id: id }];
+  // localStorage.clear();
+  function getQuantity(id: string) {
+    return items.find((item: any) => item.id === id)?.qty || 0;
+  }
+
+  function increaseQuantity(id: string) {
+    setItems((currentArr: any) => {
+      if (currentArr.find((item: any) => item.id === id) == null) {
+        return [...currentArr, { id, qty: 1 }];
+      } else {
+        return currentArr.map((item: any) => {
+          if (item.id === id) {
+            return { ...item, qty: item.qty + 1 };
+          } else {
+            return item;
+          }
+        });
+      }
     });
   }
-  // ! localStorage.clear();
-  console.log(items);
+  function decreaseQuantity(id: string) {
+    setItems((currentArr: []) => {
+      if (currentArr.find((item: any) => item.id === id) == null) {
+        return [...currentArr, { id, qty: 1 }];
+      } else {
+        return currentArr.map((item: any) => {
+          if (item.id === id) {
+            return { ...item, qty: item.qty + 1 };
+          } else {
+            return item;
+          }
+        });
+      }
+    });
+  }
+
+  function removeFromBasket(id: string) {
+    setItems((currentArr: []) => {
+      return currentArr.filter((item: any) => item.id !== id);
+    });
+  }
+
   return (
     <basketContext.Provider
       value={{
-        addToBasket,
+        getQuantity,
+        increaseQuantity,
+        decreaseQuantity,
+        removeFromBasket,
+        items,
       }}
     >
       {children}
