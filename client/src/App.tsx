@@ -7,7 +7,7 @@
 // TODO: 1. Landing page font.
 // TODO: 2. Navbar, change basket to SVG too.
 // TODO: 3. Pagnantation?
-// TODO: 4. Contact page - also add submit page
+// TODO: 4. Contact page - also add `submit page
 // TODO: 4. Contact page - possibly make the font less bold and the input borders darker.
 // TODO Lastly, add some animations, transitions somewhere.
 
