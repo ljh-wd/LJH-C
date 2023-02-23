@@ -1,4 +1,15 @@
-// TODO Add Basket: Server, Localstorage?
+// TODO: Add loading page
+// TODO: Add error page
+// TODO: Add setTimeout to simulate proper loading
+// TODO: Skeleton loading too?
+// TODO: Add Checkout page & checkout functionality
+// TODO: Re-design some areas
+// TODO: 1. Landing page font.
+// TODO: 2. Navbar, change basket to SVG too.
+// TODO: 3. Pagnantation?
+// TODO: 4. Contact page - also add submit page
+// TODO: 4. Contact page - possibly make the font less bold and the input borders darker.
+// TODO Lastly, add some animations, transitions somewhere.
 
 import Home from "./Pages/home";
 import { Routes, Route } from "react-router-dom";
