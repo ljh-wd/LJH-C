@@ -1,4 +1,5 @@
 import { ReactNode, useState } from "react";
+import { useFilter } from "../Context/filteringcontext";
 
 type DropdownProps = {
   children: ReactNode;
@@ -16,6 +17,8 @@ const Dropdown = ({
   optionFour,
 }: DropdownProps) => {
   const [open, setOpen] = useState<boolean>(false);
+
+  const { AtoZ, ZtoA, HighToLow, LowToHigh } = useFilter();
 
   return (
     <div className="inline-flex bg-white border rounded-md">
@@ -53,17 +56,30 @@ const Dropdown = ({
           }`}
         >
           <div className="p-2">
-            <button className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700">
+            <button
+              type="submit"
+              onClick={() => AtoZ("name")}
+              className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700"
+            >
               {optionOne}
             </button>
-            <button className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700">
-              Z-A
+            <button
+              onClick={() => ZtoA("-name")}
+              className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700"
+            >
+              {optionTwo}
             </button>
-            <button className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700">
-              Price: High - Low
+            <button
+              onClick={() => HighToLow("-amount")}
+              className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700"
+            >
+              {optionThree}
             </button>
-            <button className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700">
-              Price: Low - High
+            <button
+              onClick={() => LowToHigh("amount")}
+              className="block px-4 py-2 text-sm text-gray-500 rounded-lg hover:bg-gray-50 hover:text-gray-700"
+            >
+              {optionFour}
             </button>
           </div>
         </div>

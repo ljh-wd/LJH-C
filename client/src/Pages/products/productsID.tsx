@@ -17,14 +17,16 @@ const ProductsID = () => {
   const { data, isError, isLoading } = useQuery({
     queryKey: ["Products"],
     queryFn: () =>
-      wait(1500).then(() =>
-        fetchProducts("http://localhost:8000/api/products")
-      ),
+      wait(0).then(() => fetchProducts("http://localhost:8000/api/products")),
   });
 
   let filteredArr = data?.products.filter(
     (product: any) => product._id === topID
   );
+
+  if (filteredArr && filteredArr.length == 0) {
+    return <ErrorPage />;
+  }
 
   return (
     <>

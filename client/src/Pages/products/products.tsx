@@ -3,20 +3,23 @@ import Footer from "../../layouts/footer";
 import ProductCard from "../../Components/productCard";
 import Loading from "../../layouts/loading";
 import ErrorPage from "../../layouts/error";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation } from "@tanstack/react-query";
 import fetchProducts from "../../Lib/axios";
 import Dropdown from "../../Components/dropdown";
-
-function wait(duration: number) {
-  return new Promise((resolve) => setTimeout(resolve, duration));
-}
+import { useFilter } from "../../Context/filteringcontext";
 
 const Products = () => {
+  const { query } = useFilter();
+
+  function wait(duration: number) {
+    return new Promise((resolve) => setTimeout(resolve, duration));
+  }
+
   const { data, isError, isLoading } = useQuery({
-    queryKey: ["Products"],
+    queryKey: ["Products", query],
     queryFn: () =>
-      wait(1500).then(() =>
-        fetchProducts("http://localhost:8000/api/products")
+      wait(0).then(() =>
+        fetchProducts(`http://localhost:8000/api/products?sort=${query}`)
       ),
   });
 
@@ -25,7 +28,7 @@ const Products = () => {
       <Nav />
       {isError && <ErrorPage />}
       {isLoading && <Loading />}
-      <div className="flex justify-between items-center w-full h-20 bg-slate-200 p-5">
+      <div className="flex justify-start gap-3 items-center w-full h-20 bg-slate-200 p-5">
         <Dropdown
           optionOne={"A-Z"}
           optionTwo={"Z-A"}

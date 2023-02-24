@@ -1,4 +1,3 @@
-// TODO: Add loading page
 // TODO: Add error page
 // TODO: Add setTimeout to simulate proper loading
 // TODO: Skeleton loading too?
