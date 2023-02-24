@@ -2,16 +2,13 @@ const Products = require("../Models/Products");
 const { createCustomError } = require("../errors/custom-error");
 
 const getAllProducts = async (req, res) => {
-  const { name, amount, sizes, colour, gender, numericFilters, sort } =
-    req.query;
+  const { name, amount, colour, numericFilters, sort } = req.query;
 
   const queryObject = {};
 
   if (name) queryObject.name = { $regex: name, $options: "i" };
   if (amount) queryObject.amount = amount;
-  if (sizes) queryObject.sizes = sizes;
   if (colour) queryObject.colour = { $regex: colour, $options: "i" };
-  if (gender) queryObject.gender = gender;
 
   if (numericFilters) {
     const operatorMap = {
