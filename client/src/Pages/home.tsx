@@ -9,14 +9,14 @@ const Home = () => {
       <div className="h-full grid grid-rows-1 grid-cols-6">
         <div className="col-span-4 lg:col-span-2 flex justify-center items-start pl-10 pb-40 flex-col gap-10">
           <div className="flex flex-col gap-5 after:w-full after:bg-black after:h-[1px] font-[600]">
-            <h1 className="playfair uppercase text-3xl tracking-wider">
+            <h1 className="playfair font-thin uppercase text-3xl tracking-wider italic">
               Your style
             </h1>
-            <h2 className="playfair text-3xl uppercase tracking-wider">
+            <h2 className="playfair font-thin italic text-3xl uppercase tracking-wider">
               is what you choose.
             </h2>
           </div>
-          <p className="-mt-[20px] text-md md:text-lg font-light">
+          <p className="-mt-[20px] text-md md:text-lg font-thin">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minus
             cupiditate dicta! Corrupti, omnis quidem.
           </p>

@@ -1,14 +1,6 @@
-// TODO: Add error page
-// TODO: Add setTimeout to simulate proper loading
-// TODO: Skeleton loading too?
 // TODO: Add Checkout page & checkout functionality
-// TODO: Re-design some areas
-// TODO: 1. Landing page font.
-// TODO: 2. Navbar, change basket to SVG too.
-// TODO: 3. Pagnantation?
-// TODO: 4. Contact page - also add `submit page
-// TODO: 4. Contact page - possibly make the font less bold and the input borders darker.
-// TODO Lastly, add some animations, transitions somewhere.
+// TODO: Navbar, change basket to SVG too.
+// TODO: Deploy.
 
 import Home from "./Pages/home";
 import { Routes, Route } from "react-router-dom";
@@ -17,6 +9,7 @@ import NotFound from "./Pages/404-page";
 import Contact from "./Pages/contact";
 import Basket from "./Pages/basket";
 import Products from "./Pages/products/products";
+import SubmittedPage from "./Pages/submitted";
 
 function App() {
   return (
@@ -30,6 +23,7 @@ function App() {
         </Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/basket" element={<Basket />} />
+        <Route path="/submitted" element={<SubmittedPage />} />
       </Routes>
     </div>
   );

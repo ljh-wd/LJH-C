@@ -28,7 +28,7 @@ const Products = () => {
       <Nav />
       {isError && <ErrorPage />}
       {isLoading && <Loading />}
-      <div className="flex justify-start gap-3 items-center w-full h-20 bg-slate-200 p-5">
+      <div className="flex justify-center items-center w-full   bg-slate-300 p-5 h-fit">
         <Dropdown
           optionOne={"A-Z"}
           optionTwo={"Z-A"}

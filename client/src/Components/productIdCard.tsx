@@ -24,11 +24,8 @@ const ProductIdCard = (props: CardProperties) => {
       >
         Back
       </button>
-      <div className="bg-white w-80 shadow-md rounded-xl duration-500  hover:shadow-xl h-fit">
-        <img
-          src={props.imgUrl}
-          className="h-80 w-80 object-cover rounded-t-xl"
-        />
+      <div className="bg-white w-80 shadow-md rounded duration-500  hover:shadow-xl h-fit">
+        <img src={props.imgUrl} className="h-80 w-80 object-cover rounded-t" />
         <div className="px-4 py-3 w-72">
           <span className="text-gray-400 mr-3 uppercase text-xs">LJH-C</span>
           <h4 className="text-lg font-bold text-black truncate block capitalize playfair">
