@@ -1,5 +1,5 @@
 import PrimaryBtn from "../layouts/primary-btn";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useBasket } from "../Context/basketContext";
 import { useQuery } from "@tanstack/react-query";
 import fetchProducts from "../Lib/axios";
@@ -11,22 +11,15 @@ import Loading from "../layouts/loading";
 const Basket = () => {
   const { items } = useBasket();
 
-  function wait(duration: number) {
-    return new Promise((resolve) => setTimeout(resolve, duration));
-  }
-
   const { data, isError, isLoading } = useQuery({
-    queryKey: ["Products"],
-    queryFn: () =>
-      wait(1500).then(() =>
-        fetchProducts("http://localhost:8000/api/products")
-      ),
+    queryKey: ["all-products-for-basket"],
+    queryFn: () => fetchProducts("http://localhost:8000/api/products"),
   });
 
   let shipping = 6.99;
   let subtotal = currencyFormatter.format(
     items.reduce((total: number, item: any) => {
-      const product = data?.products.find((i: any) => i._id === item.id);
+      const product = data?.products?.find((i: any) => i._id === item.id);
       return total + product?.amount * item.qty;
     }, 0)
   );
@@ -68,11 +61,9 @@ const Basket = () => {
                     <p className="text-base leading-none text-gray-800 ">
                       Subtotal
                     </p>
-                    {!isLoading && (
-                      <p className="text-base leading-none text-gray-800 ">
-                        {subtotal}
-                      </p>
-                    )}
+                    <p className="text-base leading-none text-gray-800 ">
+                      {subtotal}
+                    </p>
                   </div>
                   <div className="flex items-center justify-between pt-5">
                     <p className="text-base leading-none text-gray-800 ">
@@ -88,7 +79,7 @@ const Basket = () => {
                     <p className="text-2xl leading-normal text-gray-800 ">
                       Total
                     </p>
-                    {!isLoading && (
+                    {
                       <p className="text-2xl font-bold leading-normal text-right text-gray-800 ">
                         {currencyFormatter.format(
                           items.reduce((total: number, item: any) => {
@@ -101,7 +92,7 @@ const Basket = () => {
                           }, 0)
                         )}
                       </p>
-                    )}
+                    }
                   </div>
                   <div className="flex items-center justify-center py-5">
                     <PrimaryBtn>Checkout</PrimaryBtn>

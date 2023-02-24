@@ -9,16 +9,9 @@ interface Props {
 }
 
 const BasketCard = ({ id, qty }: Props) => {
-  function wait(duration: number) {
-    return new Promise((resolve) => setTimeout(resolve, duration));
-  }
-
   const { data } = useQuery({
-    queryKey: ["Products"],
-    queryFn: () =>
-      wait(1500).then(() =>
-        fetchProducts("http://localhost:8000/api/products")
-      ),
+    queryKey: ["product-items-card"],
+    queryFn: () => fetchProducts("http://localhost:8000/api/products"),
   });
 
   const { removeFromBasket, increaseQuantity, decreaseQuantity } = useBasket();
