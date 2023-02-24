@@ -5,7 +5,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://images.pexels.com/photos/6668809/pexels-photo-6668809.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "colour": "White",
-    "gender": "male"
+    "gender": "Male"
   },
   {
     "name": "Patterned Shirt",
@@ -13,7 +13,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://images.pexels.com/photos/769733/pexels-photo-769733.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "colour": ["White", "Red"],
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -22,7 +22,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://images.pexels.com/photos/4725152/pexels-photo-4725152.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "colour": "White",
-    "gender": "female"
+    "gender": "Female"
   },
 
   {
@@ -31,7 +31,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://images.pexels.com/photos/6427233/pexels-photo-6427233.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "colour": "Pink",
-    "gender": "female"
+    "gender": "Female"
   },
   {
     "name": "Olive plain tailored suit",
@@ -39,7 +39,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1425640652/photo/fashion-model-portrait-sexy-young-man-with-hands-in-pocket-and-studio-on-grey-background.jpg?s=612x612&w=0&k=20&c=gnPBRlkQ2VWA87k8QkH374AtySJnGFIzEJXIvygjMnU=",
     "colour": "Olive",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -48,7 +48,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1346562873/photo/successful-man-entrepreneur-businessman-investor-creative-producer-concept.jpg?s=612x612&w=0&k=20&c=vKp0lAsPuwWIXLd604ELa30AfgiIstwySohIIu1RdpU=",
     "colour": "Navy",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -57,7 +57,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/171577664/photo/female-business-professional-using-digital-tablet-isolated.jpg?s=612x612&w=0&k=20&c=bJeMDDwskQh2FE4DT_mzPz1N3OfNT1YIj2WdeNG4zEo=",
     "colour": "Black",
-    "gender": "female"
+    "gender": "Female"
   },
 
   {
@@ -66,7 +66,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1262236359/photo/laughing-mature-adult-afro-american-businesswoman.jpg?s=612x612&w=0&k=20&c=mhR0ql8LwPN69aHICrrzcPcQXYBUfqCVi7U3Gqs2zXg=",
     "colour": "Navy",
-    "gender": "female"
+    "gender": "Female"
   },
   {
     "name": "Dark washed jeans",
@@ -74,7 +74,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/600373506/photo/blue-jeans-isolated-with-clipping-path.jpg?s=612x612&w=0&k=20&c=4xhwLdvJ9kFpFX_0P6M4n2gYAV7efWbaoz_9-T0ZIYI=",
     "colour": "Blue",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -83,7 +83,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1365757342/photo/black-cargo-pants-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=xO2Db4Fqmk0sD-eg8ZsleRVhdJpZ7e8-na56Hq_VQjk=",
     "colour": "Black",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -92,16 +92,16 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1313799292/photo/young-woman-in-blue-jeans-with-white-shirt.jpg?s=612x612&w=0&k=20&c=bLnsFMSCyaQYQrIXTIgY1l3yBTIQyn0KZqM0Lfzfgl8=",
     "colour": "Blue",
-    "gender": "female"
+    "gender": "Female"
   },
 
   {
-    "name": "Ligh washed denim shorts",
+    "name": "Light washed denim shorts",
     "amount": 3.99,
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1410148785/photo/blonde-woman-in-casual-clothes-on-white-background.jpg?s=612x612&w=0&k=20&c=v4sDInCPqnY4_1W-PskVGqdGoiD4ToYNkgkEztyZxwQ=",
     "colour": "Blue",
-    "gender": "female"
+    "gender": "Female"
   },
   {
     "name": "Plain jumper",
@@ -109,7 +109,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1409297615/photo/portrait-of-young-man-in-a-yellow-sweater-outdoors.jpg?s=612x612&w=0&k=20&c=r0vISeO_hsM2YdCB9oFGEMZLlnV5wnxpLRdXXI0ypw8=",
     "colour": "Yellow",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -118,7 +118,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/638278226/photo/young-asian-man.jpg?s=612x612&w=0&k=20&c=OsW2N6l-MPg901x2pHs5lN3MuFP0II2-X7GIJv8Tt-4=",
     "colour": "Blue",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -127,7 +127,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1462962026/photo/beauty-portrait-of-young-asian-woman-in-red-knit.jpg?s=612x612&w=0&k=20&c=zr1i6XYgahcTHEqUEsBcergQvj_pZbzdnAD7DnmYG7U=",
     "colour": "Red",
-    "gender": "female"
+    "gender": "Female"
   },
 
   {
@@ -136,7 +136,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/184344932/photo/female-portrait.jpg?s=612x612&w=0&k=20&c=Z07p9ihfytYOyq60VUhzNi6sTL3Z1cj5lliVrttQldc=",
     "colour": "Blue",
-    "gender": "female"
+    "gender": "Female"
   },
   {
     "name": "multi colour tight fitted gym top",
@@ -144,7 +144,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/544463710/photo/bearded-young-adult-cyclist-with-water-bottle-looking-at-camera.jpg?s=612x612&w=0&k=20&c=1KY_yUqWd8bD-i0Fkc2DX0F4Pu7vJ9aw7qiuKVy9xh0=",
     "colour": ["Black", "Blue"],
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -153,7 +153,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1345275845/photo/shot-of-a-muscular-young-man-posing-against-a-white-background.jpg?s=612x612&w=0&k=20&c=xJe1Uxdo5V4mrGBj-NtPVI-3uq3Df2089JCDUZJCiHg=",
     "colour": "Black",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -162,7 +162,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1179375804/photo/attractive-confident-strong-athletic-woman-with-great-abs-posing-with-kettlebell-looking-at.jpg?s=612x612&w=0&k=20&c=hBxkygD5MrNewep-WZFgv9ihR89DtnatvbRBhozHbZk=",
     "colour": "Black",
-    "gender": "female"
+    "gender": "Female"
   },
 
   {
@@ -171,7 +171,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/184309858/photo/woman-jogging-on-white-background.jpg?s=612x612&w=0&k=20&c=8tVogdjdP-xFH-BKeCLOwN7eaMDjkoQcSz5-Ic_kw1k=",
     "colour": "Pink",
-    "gender": "female"
+    "gender": "Female"
   },
   {
     "name": "Brown elegant shoes",
@@ -179,7 +179,7 @@
     "sizes": [4, 5, 6, 7, 8, 9, 10, 11],
     "imgUrl": "https://media.istockphoto.com/id/1398259066/photo/a-businessman-or-groom-is-dressed-up-with-classic-elegant-shoes-in-a-outdoor-space-closeup.jpg?s=612x612&w=0&k=20&c=Uk98PY1NPSiX5BIYA304UFXEoeKMXOaprVo023y4nrw=",
     "colour": "Brown",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -188,7 +188,7 @@
     "sizes": [4, 5, 6, 7, 8, 9, 10, 11],
     "imgUrl": "https://media.istockphoto.com/id/1126529769/photo/workout-in-the-rain.jpg?s=612x612&w=0&k=20&c=lESMsArCpB6StvoU49862kQBZjmrcx7YvoG0_sNR6_M=",
     "colour": "Orange",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -197,7 +197,7 @@
     "sizes": [3, 4, 5, 6, 7, 8],
     "imgUrl": "https://media.istockphoto.com/id/1407474831/photo/close-up-of-woman-legs-and-basketball-shoes.jpg?s=612x612&w=0&k=20&c=QJYc4cwtrjTWjzMFjJPvZKZT7avXt2_ZyTS6N-uGLTA=",
     "colour": "Black",
-    "gender": "female"
+    "gender": "Female"
   },
 
   {
@@ -206,7 +206,7 @@
     "sizes": [3, 4, 5, 6, 7, 8],
     "imgUrl": "https://media.istockphoto.com/id/1424871547/photo/womens-legs-in-pink-sneakers-close-up.jpg?s=612x612&w=0&k=20&c=lpjbYzmL-4eJqGm1Y0IaXXm3tRBO11b6sA818VvHa84=",
     "colour": "Pink",
-    "gender": "female"
+    "gender": "Female"
   },
   {
     "name": "Grey wooly overcoat",
@@ -214,7 +214,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/538025134/photo/handsome-elegant-man-in-overcoat-isolated.jpg?s=612x612&w=0&k=20&c=OIT2Htd1li6UJEL7HFNyhIi1upMglqj4qFEv6_WqjWc=",
     "colour": "Grey",
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -223,7 +223,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/111952792/photo/man-in-ski-parka-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=hkAunqgKF1v4AqoaOy73CDhfTTksfEkUpjI1G6tg2IE=",
     "colour": ["Black", "Yellow"],
-    "gender": "male"
+    "gender": "Male"
   },
 
   {
@@ -232,7 +232,7 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1445706779/photo/girl-in-a-winter-sports-jacket.jpg?s=612x612&w=0&k=20&c=zix518btGNjMSpmM2z3rhO6A7UdS1QNYbu1rdryElw4=",
     "colour": "Red",
-    "gender": "female"
+    "gender": "Female"
   },
 
   {
@@ -241,6 +241,6 @@
     "sizes": ["XS", "S", "M", "L", "XL"],
     "imgUrl": "https://media.istockphoto.com/id/1455902697/photo/beautiful-young-woman-posing-in-city-park.jpg?s=612x612&w=0&k=20&c=gdgQgrV3xEM3YDGyOcp_MSN37_QnkfyeoYYExz4uEUU=",
     "colour": "Blue",
-    "gender": "female"
+    "gender": "Female"
   }
 ]
