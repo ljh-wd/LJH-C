@@ -19,7 +19,9 @@ const Products = () => {
     queryKey: ["Products", query],
     queryFn: () =>
       wait(0).then(() =>
-        fetchProducts(`https://LJH-C.onrender.com/api/products?sort=${query}`)
+        fetchProducts(
+          `https://LJH-C-API.onrender.com/api/products?sort=${query}`
+        )
       ),
   });
 

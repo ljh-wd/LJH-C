@@ -17,7 +17,9 @@ const ProductsID = () => {
   const { data, isError, isLoading } = useQuery({
     queryKey: ["Products"],
     queryFn: () =>
-      wait(0).then(() => fetchProducts("http://localhost:8000/api/products")),
+      wait(0).then(() =>
+        fetchProducts("https://LJH-C-API.onrender.com/api/products")
+      ),
   });
 
   let filteredArr = data?.products.filter(
