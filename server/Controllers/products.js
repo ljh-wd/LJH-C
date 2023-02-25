@@ -1,4 +1,4 @@
-const Products = require("../Models/Products");
+const Products = require("/Users/ljhastr/Documents/MERN-Projects/LJH-C/server/Models/products.js");
 const { createCustomError } = require("../errors/custom-error");
 
 const getAllProducts = async (req, res) => {
