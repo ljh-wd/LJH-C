@@ -7,7 +7,6 @@ export default function Nav() {
     { name: "Home", href: "/", id: crypto.randomUUID() },
     { name: "Shop", href: "/shop", id: crypto.randomUUID() },
     { name: "Contact", href: "/contact", id: crypto.randomUUID() },
-    // { name: "Basket", href: "/basket", id: crypto.randomUUID() },
   ];
 
   return (

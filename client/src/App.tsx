@@ -1,7 +1,3 @@
-// TODO: Add Checkout page & checkout functionality
-// TODO: Navbar, change basket to SVG too.
-// TODO: Deploy.
-
 import Home from "./Pages/home";
 import { Routes, Route } from "react-router-dom";
 import ProductsID from "./Pages/products/productsID";

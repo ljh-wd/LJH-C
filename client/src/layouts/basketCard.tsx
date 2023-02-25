@@ -11,7 +11,8 @@ interface Props {
 const BasketCard = ({ id, qty }: Props) => {
   const { data } = useQuery({
     queryKey: ["product-items-card"],
-    queryFn: () => fetchProducts("http://localhost:8000/api/products"),
+    queryFn: () =>
+      fetchProducts("https://technotes-api.onrender.com/api/products"),
   });
 
   const { removeFromBasket, increaseQuantity, decreaseQuantity } = useBasket();
