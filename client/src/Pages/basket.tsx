@@ -16,8 +16,7 @@ const Basket = () => {
 
   const { data, isError, isLoading } = useQuery({
     queryKey: ["all-products-for-basket"],
-    queryFn: () =>
-      fetchProducts("https://technotes-api.onrender.com/api/products"),
+    queryFn: () => fetchProducts("https://LJH-C.onrender.com/api/products"),
   });
 
   let shipping = 6.99;

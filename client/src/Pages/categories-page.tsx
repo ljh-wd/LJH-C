@@ -1,7 +1,6 @@
 import Nav from "../layouts/nav";
 import Footer from "../layouts/footer";
 import CategoryCard from "../Components/category-card";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Categories = () => {
   let categories: {
