@@ -10,6 +10,7 @@ import Contact from "./Pages/contact";
 import Basket from "./Pages/basket";
 import Products from "./Pages/products/products";
 import SubmittedPage from "./Pages/submitted";
+import CheckoutPage from "./Pages/checkout";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/basket" element={<Basket />} />
         <Route path="/submitted" element={<SubmittedPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </div>
   );

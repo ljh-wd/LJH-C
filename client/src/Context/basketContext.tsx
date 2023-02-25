@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 import useLocalStorage from "../Hooks/useLocalStorage";
 type BasketProviderProps = {
   children: ReactNode;
@@ -24,6 +24,7 @@ export function useBasket() {
 
 export function BasketProvider({ children }: BasketProviderProps) {
   const [items, setItems] = useLocalStorage<BasketItem[]>("Items", []);
+  const [total, setTotal] = useState<number>(0);
 
   function getQuantity(id: string) {
     return items.find((item: any) => item.id === id)?.qty || 0;
