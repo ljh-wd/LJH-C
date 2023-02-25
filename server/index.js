@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://LJH-C.onrender.com",
+    origin: "https://ljh-c.onrender.com",
   })
 );
 
