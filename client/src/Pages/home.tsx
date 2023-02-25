@@ -1,6 +1,7 @@
 import Nav from "../layouts/nav";
 import Footer from "../layouts/footer";
 import PrimaryBtn from "../layouts/primary-btn";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,9 +21,9 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minus
             cupiditate dicta! Corrupti, omnis quidem.
           </p>
-          <a href="/shop">
+          <Link to="/shop">
             <PrimaryBtn>Shop Now</PrimaryBtn>
-          </a>
+          </Link>
         </div>
         <div className="landing-page bg-clip-path w-full bg-contain xl:bg-cover bg-right bg-no-repeat h-full col-span-3 lg:col-span-4"></div>
       </div>
