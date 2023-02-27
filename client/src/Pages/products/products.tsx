@@ -26,7 +26,7 @@ const Products = () => {
   });
 
   return (
-    <div className="h-screen w-full">
+    <div className="h-full w-full">
       <Nav />
       {isError && <ErrorPage />}
       {isLoading && <Loading />}

@@ -31,7 +31,7 @@ const ProductsID = () => {
   }
 
   return (
-    <div className="h-screen w-fu">
+    <div className="h-screen">
       <Nav />
 
       {isError && <ErrorPage />}
