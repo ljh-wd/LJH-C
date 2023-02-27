@@ -31,7 +31,7 @@ const Products = () => {
       {isError && <ErrorPage />}
       {isLoading && <Loading />}
       {!isLoading && !isError && (
-        <div className="flex justify-center items-center w-full bg-neutral-300 p-5 h-fit">
+        <div className="flex justify-center items-center w-full bg-neutral-300 p-5 h-fit mt-[68px]">
           <Dropdown
             optionOne={"A-Z"}
             optionTwo={"Z-A"}
