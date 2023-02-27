@@ -10,7 +10,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="w-full shadow-sm bg-[#121111] fixed top-0">
+    <nav className="w-full shadow-sm bg-[#121111] fixed top-0 z-20">
       <div className="justify-around gap-40 h-fit px-4 mx-auto  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
