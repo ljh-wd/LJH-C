@@ -33,7 +33,7 @@ const ProductsID = () => {
       {isError && <ErrorPage />}
       {isLoading && <Loading />}
       {data && (
-        <div className="h-screen">
+        <div className="h-screen mt-[68px]">
           {filteredArr.map((item: any) => (
             <div
               className="w-full mx-auto grid grid-cols-1  justify-items-center mt-10 h-screen"
