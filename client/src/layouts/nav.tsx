@@ -10,7 +10,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="w-full shadow-sm bg-[#121111]">
+    <nav className="w-full shadow-sm bg-[#121111] fixed top-0">
       <div className="justify-around gap-40 h-fit px-4 mx-auto  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -60,7 +60,7 @@ export default function Nav() {
         <div>
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "flex transition" : "hidden"
+              navbar ? "flex transition h-fit" : "hidden"
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
