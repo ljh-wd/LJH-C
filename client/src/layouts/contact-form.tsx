@@ -7,7 +7,7 @@ const ContactForm = () => {
   return (
     <>
       <Nav />
-      <section className="bg-white mt-[68px]">
+      <section className="bg-white mt-[68px] h-screen">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="uppercase playfair italic font-semibold mb-4 text-4xl tracking-tight  text-center text-gray-900">
             Contact Us
