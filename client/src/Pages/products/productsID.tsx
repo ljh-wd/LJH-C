@@ -1,5 +1,4 @@
 import Nav from "../../layouts/nav";
-import Footer from "../../layouts/footer";
 import ProductIdCard from "../../Components/productIdCard";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
