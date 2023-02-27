@@ -26,7 +26,7 @@ const BasketCard = ({ id, qty }: Props) => {
         <img
           src={product.imgUrl}
           alt="Black Leather Bag"
-          className="hidden md:block w-full h-full object-center object-cover"
+          className="block w-full h-full object-center object-cover"
         />
       </div>
       <div className="md:pl-3 md:w-8/12 2xl:w-3/4 flex flex-col justify-center">
