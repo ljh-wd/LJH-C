@@ -1,3 +1,6 @@
+// todo: stop ID card loading bug
+// todo: polish design overall
+
 import Home from "./Pages/home";
 import { Routes, Route } from "react-router-dom";
 import ProductsID from "./Pages/products/productsID";

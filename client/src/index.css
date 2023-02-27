@@ -21,7 +21,7 @@
 }
 
 .landing-page {
-  background-image: url(..//assets/images/landing-page-img.jpg);
+  background-image: url(../public/assets/images/landing-page-img.jpg);
 }
 
 body {
