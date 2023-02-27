@@ -17,7 +17,7 @@ const ErrorPage = () => {
                   you're looking for.
                 </p>
               </div>
-              <Link to="/shop">
+              <Link to="/">
                 <PrimaryBtn>Go back home</PrimaryBtn>
               </Link>
             </div>

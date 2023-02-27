@@ -31,7 +31,7 @@ const ProductsID = () => {
   }
 
   return (
-    <>
+    <div className="h-screen w-fu">
       <Nav />
 
       {isError && <ErrorPage />}
@@ -58,7 +58,7 @@ const ProductsID = () => {
       )}
 
       <Footer />
-    </>
+    </div>
   );
 };
 

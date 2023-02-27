@@ -18,7 +18,7 @@ const Products = () => {
   const { data, isError, isLoading } = useQuery({
     queryKey: ["Products", query],
     queryFn: () =>
-      wait(0).then(() =>
+      wait(1000).then(() =>
         fetchProducts(
           `https://LJH-C-API.onrender.com/api/products?sort=${query}`
         )
@@ -26,20 +26,22 @@ const Products = () => {
   });
 
   return (
-    <>
+    <div className="h-screen w-full">
       <Nav />
       {isError && <ErrorPage />}
       {isLoading && <Loading />}
-      <div className="flex justify-center items-center w-full   bg-slate-300 p-5 h-fit">
-        <Dropdown
-          optionOne={"A-Z"}
-          optionTwo={"Z-A"}
-          optionThree={"Price: High - Low"}
-          optionFour={"Price: Low - High"}
-        >
-          Sort
-        </Dropdown>
-      </div>
+      {!isLoading && !isError && (
+        <div className="flex justify-center items-center w-full bg-neutral-200 p-5 h-fit">
+          <Dropdown
+            optionOne={"A-Z"}
+            optionTwo={"Z-A"}
+            optionThree={"Price: High - Low"}
+            optionFour={"Price: Low - High"}
+          >
+            Sort
+          </Dropdown>
+        </div>
+      )}
       {data && (
         <div className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-y-20 gap-x-14 mt-10 mb-5">
           {data?.products?.map((product: any) => (
@@ -55,7 +57,7 @@ const Products = () => {
         </div>
       )}
       <Footer />
-    </>
+    </div>
   );
 };
 

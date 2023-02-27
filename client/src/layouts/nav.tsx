@@ -10,12 +10,12 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="w-full shadow-sm bg-[#222]">
-      <div className="justify-around gap-40 h-full px-4 mx-auto  md:items-center md:flex md:px-8">
+    <nav className="w-full shadow-sm bg-[#121111]">
+      <div className="justify-around gap-40 h-fit px-4 mx-auto  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
-              <h2 className="text-2xl md:text-2xl font-bold playfair text-white">
+              <h2 className="text-2xl md:text-xl font-bold playfair text-white">
                 LJH-C
               </h2>
             </Link>
@@ -76,7 +76,7 @@ export default function Nav() {
                 </li>
               ))}
               <Link to="/basket">
-                <li>
+                <li className="my-5">
                   <svg
                     width="24"
                     height="24"
