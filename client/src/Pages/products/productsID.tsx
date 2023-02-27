@@ -56,8 +56,6 @@ const ProductsID = () => {
           ))}
         </div>
       )}
-
-      <Footer />
     </div>
   );
 };
