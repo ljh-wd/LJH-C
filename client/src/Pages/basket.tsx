@@ -49,6 +49,7 @@ const Basket = () => {
                   </p>
                 </div>
                 {isLoading && <Loading />}
+                {items.length == 0 && <div>No items in the basket...</div>}
                 <div className="flex flex-col gap-3">
                   {items.map((item: any) => (
                     <BasketCard qty={item.qty} key={item.id} id={item.id} />
