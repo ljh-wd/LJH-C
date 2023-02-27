@@ -51,7 +51,7 @@ const Basket = () => {
                 </div>
                 {isLoading && <Loading />}
                 {items.length == 0 && (
-                  <div className="flex flex-col justify-center items-center h-full w-full playfair text-2xl gap-y-20">
+                  <div className="flex flex-col justify-center items-center h-screen w-full md:h-full playfair text-2xl gap-y-20">
                     <p>No items in your basket...</p>
                     <Link to="/shop">
                       <PrimaryBtn>Go to the Shop</PrimaryBtn>
